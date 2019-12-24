@@ -1,0 +1,196 @@
+char tmpChar[26] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+//a=0 b=1 c=2 d=3 e=4 f=5 g=6
+//h=7 i=8 j=9 k=10 l=11 m=12 n=13
+//o=14 p=15 q=16 r=17 s=18 t=19
+//u=20 v=21 w=22 x=23 y=24 z=25
+
+void setup()
+{
+  pinMode(13,OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+   GetChar(tmpChar[7]);
+   GetChar(tmpChar[4]);
+   GetChar(tmpChar[11]);
+   GetChar(tmpChar[15]);
+   
+}
+
+void GetChar(char tmpChar)
+    {
+      switch (tmpChar) {
+        case 'a':
+        digitalWrite(13,LOW);
+        delay(2000);
+        digitalWrite(13,HIGH);
+        delay(2000);
+        break;
+        case 'b':
+        digitalWrite(13,HIGH);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(6000);
+        break;
+        case 'c':
+        digitalWrite(13,HIGH);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(2000);
+        digitalWrite(13,HIGH);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(2000);
+        break;
+        case 'd':
+        digitalWrite(13,HIGH);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(4000);
+        break;
+        case'e':
+        digitalWrite(13,LOW);
+        delay(2000);
+        break;
+        case 'f':
+        digitalWrite(13,LOW);
+        delay(4000);
+        digitalWrite(13,HIGH);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(2000);
+        break;
+        case 'g':
+        digitalWrite(13,HIGH);
+        delay(4000);
+        digitalWrite(13,LOW);
+        delay(2000);
+        break;
+        case 'h':
+        digitalWrite(13,LOW);
+        delay(8000);
+        break;
+        case 'i':
+        digitalWrite(13,LOW);
+        delay(4000);
+        break;
+        case 'j':
+        digitalWrite(13,LOW);
+        delay(2000);
+        digitalWrite(13,HIGH);
+        delay(6000);
+        break;
+        case 'k':
+        digitalWrite(13,HIGH);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(2000);
+        digitalWrite(13,HIGH);
+        delay(2000);
+        break;
+        case 'l':
+        digitalWrite(13,LOW);
+        delay(2000);
+        digitalWrite(13,HIGH);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(4000);
+        break;
+        case 'm':
+        digitalWrite(13,HIGH);
+        delay(4000);
+        break;
+        case 'n':
+        digitalWrite(13,HIGH);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(2000);
+        break;
+        case 'o':
+        digitalWrite(13,HIGH);
+        delay(6000);
+        break;
+        case 'p':
+        digitalWrite(13,LOW);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(4000);
+        digitalWrite(13,LOW);
+        delay(2000);
+        break;
+        case 'q':
+        digitalWrite(13,HIGH);
+        delay(4000);
+        digitalWrite(13,LOW);
+        delay(2000);
+        digitalWrite(13,HIGH);
+        delay(2000);
+        break;
+        case 'r':
+        digitalWrite(13,LOW);
+        delay(2000);
+        digitalWrite(13,HIGH);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(2000);
+        break;
+        case 's':
+        digitalWrite(13,LOW);
+        delay(6000);
+        break;
+        case 't':
+        digitalWrite(13,HIGH);
+        delay(2000);
+        break;
+        case 'u':
+        digitalWrite(13,LOW);
+        delay(4000);
+        digitalWrite(13,HIGH);
+        delay(2000);
+        break;
+        case 'v':
+        digitalWrite(13,LOW);
+        delay(6000);
+        digitalWrite(13,HIGH);
+        delay(2000);
+        break;
+        case 'w':
+        digitalWrite(13,LOW);
+        delay(2000);
+        digitalWrite(13,HIGH);
+        delay(4000);
+        break;
+        case 'x':
+        digitalWrite(13,HIGH);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(4000);
+        digitalWrite(13,HIGH);
+        delay(2000);
+        break;
+        case 'y':
+        digitalWrite(13,HIGH);
+        delay(2000);
+        digitalWrite(13,LOW);
+        delay(2000);
+        digitalWrite(13,HIGH);
+        delay(4000);
+        break;
+        case 'z':
+        digitalWrite(13,HIGH);
+        delay(4000);
+        digitalWrite(13,LOW);
+        delay(4000);
+        break;
+        
+        default:
+           break;
+      }
+    }
+
+
+
+
+
